@@ -1,14 +1,14 @@
 
 <h1 align="center">
   <br>
-  <a href="http://www.ricardodarocha.com.br"><img src="https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.png" alt="Markdownify" width="200"></a>
+  <a href="http://www.ricardodarocha.com.br"><img src="https://icons.iconarchive.com/icons/ph03nyx/super-mario/256/Retro-Coin-icon.png" alt="Markdownify" width="200"></a>
   <br>
-  Markdownify
+  designed by Ricardo da Rocha
   <br>
 </h1>
 
 <h4 align="center">About
-Uma forma simples de gerar templates no formato {{mustaches}} a partir de um arquivo json baseado em <a href="https://docs.rs/handlebars/latest/handlebars/" target="_blank">Handlebars</a>.</h4>
+Este Sidebar com Python usa a biblioteca <a href="https://flet.dev/" target="_blank">Flet</a>.</h4> é a base de vários projetos de Interface do Usuário que eu estou desenvolvendo 
 
 <p align="center">
   <a href="https://badge.fury.io/js/electron-markdownify">
@@ -33,52 +33,36 @@ Uma forma simples de gerar templates no formato {{mustaches}} a partir de um arq
   <a href="#license">License</a>
 </p>
 
-![screenshot](https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.gif)
+![screenshot](https://github.com/ricardodarocha/sidebar/blob/master/img/sidebar.gif)
 
 ## Introdução
 
-Se você pretende preencher um template de documento, você pode marcar os campos com um par de mustaches {{}}, no meio dessas chaves você coloca o nome do campo
-
-**Exemplo**
-```
-Olá {{usuario}},
-bem vindo ao sistema {{}}.
-Hoje é {{dd}} de {{mmmm}}.
-O tempo está {{tempo}}.
-```
-
-Os campos podem ser substituídos por um conteúdo em JSON
-**dados.json**
-```json
-{"usuario": "Convidado",
-"sistema": "Rust",
-"dd": 26,
-"tempo": "ensolarado"
-}```
+Uma aplicação desktop fica melhor organizada com uma sidebar, uma barra lateral que funciona como uma espécie de um menu. Ao clicar em um botão é possível expandir ou recolher o menu, de modo que sobre mais espaço para distribuir os elementos
 
 ##a Como usar
 
-Clone este repositório [Git](https://github.com/ricardodarocha/quick_template.git) 
-Rode o comando `cargo run -- arquivos/template.txt arquivos/dados.json gerado/documento.txt`
-Você verá que o documento.txt será criado na pasta "gerado"
+Clone este repositório [Git](https://github.com/ricardodarocha/sidebar.git) 
+Rode o comando `pip install flet`
+Em seguida rode o programa usando flet CLI
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/ricardodarocha/quick_template.git
+$ git clone https://github.com/ricardodarocha/sidebar.git
 
 # Go into the repository
-$ cd quick_template
+$ cd sidebar
 
 # Abra com VSCode
 $ code .
 
 # Rode o aplicativo passando os parâmetros
-$ cargo run -- arquivos/template.txt arquivos/dados.json gerado/documento.txt
+$ pip install flet
+$ flet main.py
 ```
 
 ## Download
 
-Você pode baixar a última versão estável do binário em ...
+Por enquanto ainda não há assets disponíveis
 
 ## Emailware
 
@@ -88,12 +72,14 @@ Caso necessite de suporte ou queira personalizar este projeto você pode entrar 
 
 This software uses the following open source packages:
 
-- [Handlebars](https://docs.rs/handlebars/latest/handlebars)
-- [Serde_Json](https://docs.rs/serde_json/latest/serde_json/)
+- [Flet](flet.dev)
+
+This was based in video from Line Indent
+- [Line Indent Youtube Chanel](https://www.youtube.com/watch?v=lu1obAGKxmE)
 
 ## Related
 
-[Rust](https://www.rust-lang.org/pt-BR) - A linguagem mais querida 🦀
+[Flet Blog](https://flet.dev/blog)
 
 ## Contato
 
@@ -105,10 +91,7 @@ This software uses the following open source packages:
 
 ## You may also like...
 
-- [Tera](https://crates.io/crates/tera) 
-- [Tera-cli](https://crates.io/crates/tera-cli)
-- [Askama](https://crates.io/crates/askama)
-- [Minijinja](https://crates.io/crates/minijinja)
+- Ainda não há outros links
 
 ## License
 
