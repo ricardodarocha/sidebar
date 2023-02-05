@@ -7,21 +7,10 @@
   <br>
 </h1>
 
-<h4 align="center">About
+<h4 align="center">
 Este Sidebar com Python usa a biblioteca <a href="https://flet.dev/" target="_blank">Flet</a>.</h4> é a base de vários projetos de Interface do Usuário que eu estou desenvolvendo 
 
 <p align="center">
-  <a href="https://badge.fury.io/js/electron-markdownify">
-    <img src="https://badge.fury.io/js/electron-markdownify.svg"
-         alt="Gitter">
-  </a>
-  <a href="https://gitter.im/amitmerchant1990/electron-markdownify"><img src="https://badges.gitter.im/amitmerchant1990/electron-markdownify.svg"></a>
-  <a href="https://saythanks.io/to/bullredeyes@gmail.com">
-      <img src="https://img.shields.io/badge/SayThanks.io-%E2%98%BC-1EAEDB.svg">
-  </a>
-  <a href="https://www.paypal.me/AmitMerchant">
-    <img src="https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat">
-  </a>
 </p>
 
 <p align="center">
@@ -33,13 +22,15 @@ Este Sidebar com Python usa a biblioteca <a href="https://flet.dev/" target="_bl
   <a href="#license">License</a>
 </p>
 
-![screenshot](https://github.com/ricardodarocha/sidebar/blob/master/img/sidebar.gif)
+<p align="center">
+<img src="https://github.com/ricardodarocha/sidebar/blob/master/img/sidebar.gif">
+</p>
 
 ## Introdução
 
 Uma aplicação desktop fica melhor organizada com uma sidebar, uma barra lateral que funciona como uma espécie de um menu. Ao clicar em um botão é possível expandir ou recolher o menu, de modo que sobre mais espaço para distribuir os elementos
 
-##a Como usar
+## Como usar
 
 Clone este repositório [Git](https://github.com/ricardodarocha/sidebar.git) 
 Rode o comando `pip install flet`
