@@ -3,15 +3,13 @@ from flet import *
 from functools  import partial
 import time
 
-
-
-
 # Sidebar class
 class ModernNavBar(UserControl):
     def __init__(self, func):
         self.func = func
         super().__init__()
 
+    # Quando passa o mouse por cima dos itens do menu ele destaca os itens selecionados
     def Highlight(self, e):
         if e.data == 'true':
             e.control.bgcolor= 'white10'
@@ -25,6 +23,7 @@ class ModernNavBar(UserControl):
             e.control.content.update()
         e.control.update()
 
+    # Este cartão possui os dados do usuário, como ícone, nome e profissão
     def UserData(self, initials: str, name: str, description: str):
         return Container(
             content=Row(
@@ -68,6 +67,7 @@ class ModernNavBar(UserControl):
             )
         )
         
+    # Cada item do menu é um containedIcon        
     def ContainedIcon(self, icon_name: str, text: str):
         return  Container(
             width=180,
@@ -96,7 +96,8 @@ class ModernNavBar(UserControl):
                 ]
             )
         )
-
+    
+    # O construtor do SideBar
     def build(self):
         return Container(
             width=200,
@@ -108,12 +109,24 @@ class ModernNavBar(UserControl):
                 horizontal_alignment='center',
                 controls=[
                 self.UserData("Ri", "Ricardo da Rocha", "designer"),
-                Container(
-                    width=24, 
-                    height=24, 
+                    Container(
+                    border_radius=16,
+                    content=IconButton(
+                        icon=icons.SWITCH_LEFT_SHARP,
+                        icon_size=12,
+                        icon_color='white54',
+                        style=ButtonStyle(
+                            shape={
+                                "": RoundedRectangleBorder(radius=6),
+                            },
+                            overlay_color={"": "transparent"},
+                        )
+                    ),
+                    width=30, 
+                    height=30, 
                     bgcolor="black", 
-                    border_radius=8,
-                    on_click=partial(self.func)),
+                    on_click=partial(self.func),
+                    ),
                 Divider(height=5, color="transparent"),
                 self.ContainedIcon(icons.SEARCH, 'Buscar'),
                 Divider(height=5, color="white24"),
