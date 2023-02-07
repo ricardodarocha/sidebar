@@ -8,7 +8,7 @@
 </h1>
 
 <h4 align="center">
-Este Sidebar com Python usa a biblioteca <a href="https://flet.dev/" target="_blank">Flet</a>.</h4> é a base de vários projetos de Interface do Usuário que eu estou desenvolvendo 
+*Int cpf* é um experimento em Rust para calcular o dígito verificador de um CPF armazenado no formato inteiro, em vez de string. Inspirado na comunidade <a href="https://github.com/fabriziomello/pg_toolkit_brazil/blob/main/cpf.c">Postgres Brasil</a>
 
 <p align="center">
 </p>
@@ -23,32 +23,34 @@ Este Sidebar com Python usa a biblioteca <a href="https://flet.dev/" target="_bl
 </p>
 
 <p align="center">
-<img src="https://github.com/ricardodarocha/sidebar/blob/master/img/sidebar.gif">
+<img src="https://github.com/ricardodarocha/sidebar/blob/master/img/screenshot.gif">
 </p>
 
 ## Introdução
 
-Uma aplicação desktop fica melhor organizada com uma sidebar, uma barra lateral que funciona como uma espécie de um menu. Ao clicar em um botão é possível expandir ou recolher o menu, de modo que sobre mais espaço para distribuir os elementos
+É muito comum as aplicações gravarem o CPF no banco de dados no formato String, muitas vezes com a formatação. Em outros casos também é usado String, porém sem as pontuações. Neste experimento o tipo u_64 é usado. Em vez de string, o CPF é gravado como um número inteiro. A intenção é otimizar o cálculo de verificação do CPF.
+
+## Disclaimer
+
+Este é um recurso experimental
 
 ## Como usar
 
-Clone este repositório [Git](https://github.com/ricardodarocha/sidebar.git) 
-Rode o comando `pip install flet`
-Em seguida rode o programa usando flet CLI
+Clone este repositório [Git](https://github.com/ricardodarocha/int_cpf.git) 
+Rode o comando `cargo test`
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/ricardodarocha/sidebar.git
+$ git clone https://github.com/ricardodarocha/int_cpf.git
 
 # Go into the repository
-$ cd sidebar
+$ cd int_cpf
 
 # Abra com VSCode
 $ code .
 
 # Rode o aplicativo passando os parâmetros
-$ pip install flet
-$ flet main.py
+$ cargo test
 ```
 
 ## Download
@@ -70,7 +72,7 @@ This was based in video from Line Indent
 
 ## Related
 
-[Flet Blog](https://flet.dev/blog)
+https://github.com/fabriziomello/pg_toolkit_brazil/blob/main/cpf.c
 
 ## Contato
 
@@ -86,6 +88,7 @@ This was based in video from Line Indent
 
 ## License
 
+GNU - Livre, de uso geral
 
 
 ---
